@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="Este es mi sitio web de la banda Slipknot en el que vas a  encontrar biografia, imagenes, canciones y mas cosas">
+    <meta name="keywords" content="slipknot, contacto, formulario, comentarios">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>IdeaMoya Menu Principal</title>
+</head>
+
+<body>
+    <main>
+        <header class="encabezado">
+            <h1 class="titulo">
+                Slipknot
+            </h1>
+            <!--Seccion navegador------------------------------------->
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a href="index.html"><img src="./Imagenes/Logo.png" class="logo" alt="Logo"></a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#MenuNavegacion">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="MenuNavegacion" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-3">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Menu Principal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                                <li class="nav-item"><a class="nav-link" href="canciones.html">Canciones</a></li>
+                                <li class="nav-item"><a class="nav-link" href="discografia.html">Discografia</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <body>
+                    <h2>
+                        Contacto
+                    </h2>
+                    <h3>Si queres incluir algun comentario, te dejamos por aca un formulario</h3>
+                    <!--Formulario de contacto------------------------------------------------------>
+                    <section>
+                        <form action="#" method="POST">
+                            <h4>Contacto</h4>
+                            <div class="contenedorInput">
+                                <input class="campo" type="text" placeholder="Ingrese su nombre">
+                                <input class="campo" type="text" placeholder="Ingrese su apellido">
+                                <input class="campo" type="email" placeholder="Ingrese su email">
+                            </div>
+                            <textarea name="comentario" cols="30" rows="10"
+                                placeholder="Ingrese su comentario"></textarea>
+                            <input type="submit">
+                            <input type="reset">
+                        </form>
+                    </section>
+                    <!-- Seccion footer  ----------------------------------------------------------------------->
+                    <footer class="contenedorFooter">
+                        <nav>
+                            <ul>
+                                <li><i class="fab fa-instagram-square"></i><a href="">Instagram</a></li>
+                                <li><i class="fab fa-facebook-square"></i><a href="">Facebook</a></li>
+                                <li><i class="fab fa-twitter-square"></i><a href="">Twitter</a></li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <h5>© Creado por Jonathan Emanuel Moya 2021. Todos los derechos reservados.</h5>
+                        </div>
+                    </footer>
+                    <script src="https://kit.fontawesome.com/1687b70ac3.js" crossorigin="anonymous"></script>
+                    <script src="./js/bootstrap.bundle.min.js"></script>
+        </body>
+
+</html>

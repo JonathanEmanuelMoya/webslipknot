@@ -1,0 +1,269 @@
+//VARIABLES-----------------------------------------------------//
+
+$color-principal: white;
+$color-secundario: black;
+
+
+
+/*main------------------------------------------------------------*/
+
+
+body{
+    background-color: $color-secundario;
+}
+
+
+*{
+    margin: 0px;
+    padding: 1px;
+}
+
+/* LOGO--------------------------------------------------------*/
+
+
+.logo{
+    width: 70px;
+    border-radius: 50%;
+}
+
+/*seccion BARRA DE NAVEGACION -------------------------------------*/
+
+.encabezado{
+            nav{
+                display: flex;
+                justify-content: space-around;
+                background: linear-gradient(to bottom, red, black);
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+            }
+            li{
+                display: flex;
+                flex-direction: row;
+            }
+            a{
+                text-decoration: none;
+                color: $color-principal;
+                font-size: 30px;
+                font-family: 'Lobster', cursive;
+                padding: 10px;
+            }
+        }
+
+
+
+/* Estilos del h1 al h5 -------------------------------------------*/
+
+h1{
+    text-align: center;
+    margin-bottom: 0%;
+    color: $color-principal;
+    background: linear-gradient(to bottom, black, red);
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+}
+
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: $color-principal;
+    font-family: 'Lobster', cursive;
+}
+
+h3{
+    font-size: 35px;
+    color: $color-principal;
+    text-align: center;
+}
+
+h4{
+    color: $color-principal;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h5{
+    color: $color-principal;
+    font-size: 15px;
+}
+
+/* SECCION GALERIA----------------------------------------------- */
+
+.contenedorGaleria{
+    background-color: $color-secundario;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.galeriaImagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zoom{
+    transition: 0.5s !important;
+}
+
+.zoom:hover{
+    transform: scale(1.3) !important;
+}
+
+/* SECCION INTEGRANTES ----------------------------------------------*/
+
+.contenedorIntegrantePadre{
+    border: solid 5px $color-principal;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.textoImagenIntegrante{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+/* SECCION CANCIONES ---------------------------------------------*/
+
+.contenedorLista{
+    display: grid;
+    margin: 10px;
+    border: 5px solid $color-principal;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+p{
+    padding: 5px;
+    margin: 5px + 5;
+    color: $color-principal;
+    font-family: cursive;
+    font-size: 20px;
+    border: double 5px $color-principal;
+}
+
+
+/*SECCION DISCOGRAFIA------------------------------------------------*/
+
+.contenedorDiscografia{
+    margin: 30px;
+    padding: 1px;
+    align-content: center;
+    
+}
+
+.contenedorDiscografia{
+                        th{
+                            color: $color-secundario;
+                            font-size: 23px;
+                        }
+}
+
+.contenedorDiscografia{
+            td{
+                color: $color-secundario;
+                font-size: 20px;
+            }
+}
+
+/* SECCION CONTACTO y FORMULARIO ------------------------------------*/
+
+.contenedorTextoContacto{
+    display: flex;
+    text-align: center;
+}
+
+form{
+    border: 2px solid $color-principal;
+    width: 350px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+input:focus{
+    width: 200px;
+    font-size: 24px;
+}
+
+/* SECCION FOOTER ------------------------------------------*/
+.contenedorFooter{
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, black, red);
+    font-family: cursive;
+    font-size: 20px;
+    position: static;
+}
+
+.contenedorFooter{
+                ul li{
+                        list-style: none;
+                }
+}
+
+.contenedorFooter{
+                    a{
+                        margin-left: 15px;
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: white;
+                    }
+}
+
+.listaFooter{
+    padding: 5px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+}
+
+
+
+
+
+/* MEDIA RESPONSIVE------------------------------------------------*/
+
+@media (min-width:360px){
+    .contenedorGaleria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:768px){
+    .contenedorGaleria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1024px){
+    .contenedorGaleria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
