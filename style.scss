@@ -157,7 +157,11 @@ p{
 
 /*SECCION DISCOGRAFIA------------------------------------------------*/
 
+
+
 .contenedorDiscografia{
+    display: grid;
+    border: 5px solid $color-principal;
     margin: 30px;
     padding: 1px;
     align-content: center;
@@ -250,23 +254,43 @@ input:focus{
 
 /* MEDIA RESPONSIVE------------------------------------------------*/
 
-@media (min-width:360px){
+@media (max-width:480px){
     .contenedorGaleria{
         grid-template-columns: repeat(1, 1fr);
     }
     .textoImagenIntegrante{
         flex-direction: column;
     }
+    table{
+        width: 100%;
+        font-size: .9rem;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media (min-width:768px){
+@media (min-width:481px){
     .contenedorGaleria{
         grid-template-columns: repeat(2, 1fr);
     }
+    .textoImagenIntegrante{
+        flex-direction: column;
+    }
+    table{
+        width: 100%;
+        font-size: .9rem;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media (min-width:1024px){
+@media (min-width:860px){
     .contenedorGaleria{
         grid-template-columns: repeat(3, 1fr);
     }
+    
 }
