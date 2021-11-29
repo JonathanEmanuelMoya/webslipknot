@@ -311,7 +311,7 @@ input:focus {
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 768px) {
   .contenedorGaleria {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);

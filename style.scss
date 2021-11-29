@@ -288,7 +288,7 @@ input:focus{
     }
 }
 
-@media (min-width:860px){
+@media (min-width: 768px){
     .contenedorGaleria{
         grid-template-columns: repeat(3, 1fr);
     }
