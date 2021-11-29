@@ -15,7 +15,7 @@ body{
 
 *{
     margin: 0px;
-    padding: 1px;
+    padding: 0px;
 }
 
 /* LOGO--------------------------------------------------------*/
@@ -253,6 +253,9 @@ input:focus{
 @media (min-width:360px){
     .contenedorGaleria{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .textoImagenIntegrante{
+        flex-direction: column;
     }
 }
 

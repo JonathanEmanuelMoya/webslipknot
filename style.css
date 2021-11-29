@@ -5,7 +5,7 @@ body {
 
 * {
   margin: 0px;
-  padding: 1px;
+  padding: 0px;
 }
 
 /* LOGO--------------------------------------------------------*/
@@ -260,6 +260,12 @@ input:focus {
   .contenedorGaleria {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+  .textoImagenIntegrante {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
