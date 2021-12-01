@@ -71,6 +71,7 @@ h2{
     text-align: center;
     color: $color-principal;
     font-family: 'Lobster', cursive;
+    font-size: 45px;
 }
 
 h3{
@@ -92,6 +93,14 @@ h5{
     font-size: 15px;
 }
 
+
+p{
+    padding: 1em;
+    margin: 5px + 5;
+    color: $color-principal;
+    font-family: cursive;
+    font-size: 20px;
+}
 
 /* SECCION BIOGRAFIA---------------------------------------------*/
 
@@ -154,14 +163,7 @@ h5{
 }
 
 
-p{
-    padding: 1em;
-    margin: 5px + 5;
-    color: $color-principal;
-    font-family: cursive;
-    font-size: 20px;
-    border: double 5px $color-principal;
-}
+
 
 
 /*SECCION DISCOGRAFIA------------------------------------------------*/

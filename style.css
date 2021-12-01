@@ -70,6 +70,7 @@ h2 {
   text-align: center;
   color: white;
   font-family: 'Lobster', cursive;
+  font-size: 45px;
 }
 
 h3 {
@@ -89,6 +90,14 @@ h4 {
 h5 {
   color: white;
   font-size: 15px;
+}
+
+p {
+  padding: 1em;
+  margin: 10px;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
 }
 
 /* SECCION BIOGRAFIA---------------------------------------------*/
@@ -158,15 +167,6 @@ h5 {
   border: 5px solid white;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-}
-
-p {
-  padding: 1em;
-  margin: 10px;
-  color: white;
-  font-family: cursive;
-  font-size: 20px;
-  border: double 5px white;
 }
 
 /*SECCION DISCOGRAFIA------------------------------------------------*/
