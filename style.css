@@ -338,8 +338,21 @@ input:focus {
   .contenedorDiscografia {
     display: -ms-grid;
     display: grid;
+    border: solid 5px white;
+    margin: 15px;
+    padding: 1px;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+  .contenedorDiscografia th {
+    color: white;
+    background-color: black;
+    font-size: 23px;
+  }
+  .contenedorDiscografia td {
+    color: white;
+    background-color: black;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

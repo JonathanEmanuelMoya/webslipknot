@@ -310,7 +310,27 @@ input:focus{
     }
     .contenedorDiscografia{
         display: grid;
+        border: solid 5px $color-principal;
+        margin: 15px;
+        padding: 1px;
         align-content: center;
+        
+    }
+    
+    .contenedorDiscografia{
+                            th{
+                                color: $color-principal;
+                                background-color: $color-secundario;
+                                font-size: 23px;
+                            }
+    }
+    
+    .contenedorDiscografia{
+                td{
+                    color: $color-principal;
+                    background-color: $color-secundario;
+                    font-size: 20px;
+                }
     }
 }
 
