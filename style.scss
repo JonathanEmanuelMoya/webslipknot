@@ -92,6 +92,15 @@ h5{
     font-size: 15px;
 }
 
+
+/* SECCION BIOGRAFIA---------------------------------------------*/
+
+
+.fondoBiografia{
+    display: flex;
+    flex-direction: column;
+}
+
 /* SECCION GALERIA----------------------------------------------- */
 
 .contenedorGaleria{
@@ -146,7 +155,7 @@ h5{
 
 
 p{
-    padding: 5px;
+    padding: 1em;
     margin: 5px + 5;
     color: $color-principal;
     font-family: cursive;
@@ -161,8 +170,8 @@ p{
 
 .contenedorDiscografia{
     display: grid;
-    border: 5px solid $color-principal;
-    margin: 30px;
+    border: solid 5px $color-principal;
+    margin: 15px;
     padding: 1px;
     align-content: center;
     
@@ -170,14 +179,16 @@ p{
 
 .contenedorDiscografia{
                         th{
-                            color: $color-secundario;
+                            color: $color-principal;
+                            background-color: $color-secundario;
                             font-size: 23px;
                         }
 }
 
 .contenedorDiscografia{
             td{
-                color: $color-secundario;
+                color: $color-principal;
+                background-color: $color-secundario;
                 font-size: 20px;
             }
 }
@@ -254,7 +265,7 @@ input:focus{
 
 /* MEDIA RESPONSIVE------------------------------------------------*/
 
-@media (max-width:480px){
+@media (min-width:360px){
     .contenedorGaleria{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -271,7 +282,7 @@ input:focus{
     }
 }
 
-@media (min-width:481px){
+@media (min-width:768px){
     .contenedorGaleria{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -288,9 +299,16 @@ input:focus{
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 1200px){
     .contenedorGaleria{
         grid-template-columns: repeat(3, 1fr);
     }
-    
+    .textoImagenIntegrante{
+        flex-direction: row;
+    }
+    .contenedorDiscografia{
+        display: grid;
+        align-content: center;
+    }
 }
+

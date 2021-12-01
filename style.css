@@ -91,6 +91,17 @@ h5 {
   font-size: 15px;
 }
 
+/* SECCION BIOGRAFIA---------------------------------------------*/
+.fondoBiografia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* SECCION GALERIA----------------------------------------------- */
 .contenedorGaleria {
   background-color: black;
@@ -150,7 +161,7 @@ h5 {
 }
 
 p {
-  padding: 5px;
+  padding: 1em;
   margin: 10px;
   color: white;
   font-family: cursive;
@@ -162,20 +173,22 @@ p {
 .contenedorDiscografia {
   display: -ms-grid;
   display: grid;
-  border: 5px solid white;
-  margin: 30px;
+  border: solid 5px white;
+  margin: 15px;
   padding: 1px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .contenedorDiscografia th {
-  color: black;
+  color: white;
+  background-color: black;
   font-size: 23px;
 }
 
 .contenedorDiscografia td {
-  color: black;
+  color: white;
+  background-color: black;
   font-size: 20px;
 }
 
@@ -259,7 +272,7 @@ input:focus {
 }
 
 /* MEDIA RESPONSIVE------------------------------------------------*/
-@media (max-width: 480px) {
+@media (min-width: 360px) {
   .contenedorGaleria {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -285,7 +298,7 @@ input:focus {
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 768px) {
   .contenedorGaleria {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -311,10 +324,22 @@ input:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .contenedorGaleria {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  .textoImagenIntegrante {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contenedorDiscografia {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
